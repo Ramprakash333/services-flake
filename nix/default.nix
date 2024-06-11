@@ -19,5 +19,6 @@ in
     ./cassandra.nix
     ./tempo.nix
     ./weaviate.nix
+    ./mongodb.nix
   ];
 }
