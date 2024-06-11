@@ -77,6 +77,17 @@ in
                 in
                     {
                         command = startScript;
+                         readiness_probe = {
+                          exec.command = ''
+                            echo "hello"
+                          '';
+                          initial_delay_seconds = 15;
+                          period_seconds = 10;
+                          timeout_seconds = 4;
+                          success_threshold = 1;
+                          failure_threshold = 5;
+                        };
+                        availability.restart = "on_failure";
                         namespace = name;
                     };
                 };
