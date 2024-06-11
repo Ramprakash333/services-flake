@@ -78,7 +78,7 @@ in
                     {
                         command = startScript;
                         namespace = name;
-                    }
+                    };
                 };
             };
         };
