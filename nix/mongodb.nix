@@ -5,7 +5,7 @@ let
 in
 {
   options = {
-    enable = lib.mkEnableOption "MongoDB process and expose utilities";
+    enable = lib.mkEnableOption name;
 
     package = lib.mkPackageOption pkgs "mongodb" {};
     
